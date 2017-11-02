@@ -29,3 +29,24 @@ const app4 = new Vue({
         ]
     }
 });
+
+const app5 = new Vue({
+    el: '#app-5',
+    data: {
+        message: 'Hello Vue.js'
+    },
+    methods: {
+        reverseMessage: function() {
+            this.message = this.message.split('')
+            .reverse()
+            .join('');
+        }
+    }
+});
+
+const app6 = new Vue({
+    el: '#app-6',
+    data: {
+        message: 'Hello Vue.js'
+    }
+});
